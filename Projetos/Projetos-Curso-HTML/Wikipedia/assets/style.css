@@ -1,0 +1,138 @@
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 30px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .content-header h1 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+header .logo .content-header p {
+    font-size: 0.9rem;
+}
+
+header .search-contain {
+    display: flex;
+    align-items: center;
+}
+
+/* Input de pesquisa - header */
+.search-contain input {
+    padding: 10px;
+    background-color: #fff;
+    color: #202122;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+}
+
+.search-contain button {
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #202122;
+    font-weight: bold;
+    border: 1px solid #a2a9b1;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* CORPO DO SITE */
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ASIDE - LIVROS */
+.sidebar-container{
+    border-right: solid 1px #cdcdcd;
+    height: 100%;
+}
+
+.sidebar-container h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-container ul li {
+    padding-bottom: 5px;
+}
+
+.sidebar-container ul li a {
+    font-size: 1rem;
+}
+
+.sidebar-container ul li a:hover {
+    text-decoration: underline;
+    color: rgb(31, 31, 255);
+}
+
+/* MAIN */
+.main-content .main-content__article > h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.main-content .main-content__article > h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.main-content .main-content__article > p {
+    padding: 5px 0;
+}
+
+.main-content .main-content__article ul li {
+    padding: 5px 0;
+    list-style-type: disc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.anchors h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}

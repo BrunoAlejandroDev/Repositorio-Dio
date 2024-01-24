@@ -1,0 +1,153 @@
+/* MENU DE NAVEGACAO */
+.container nav {
+    width: 150px;
+    background-color: rgb(218, 255, 255);
+    padding: 20px 15px 0px;
+}
+
+.container nav ul li {
+    list-style: none;
+}
+
+.container nav ul a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container nav ul a:hover {
+    text-decoration: underline;
+    color: rgb(34, 65, 132);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* CORPO DO SITE */
+main {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+/* HEADER DO SITE */
+.header-main {
+    height: 150px;
+}
+
+.header-main h1 {
+    padding: 20px;
+}
+
+.header-main img{
+    width: 100%;
+    height: 160px;
+}
+
+/* CORPO DO SITE */
+.contact-article h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.contact-article address {
+    text-align: center;
+    margin: 15px;
+}
+
+.contact-article address p {
+    padding: 5px 0;
+}
+
+.contact-article iframe {
+    padding: 5px 0;
+}
+
+/* FORMULÁRIO DE CONTATO */
+.form-article h2 {
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+
+.form-article p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-article form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+}
+
+.form-article form label, input, textarea {
+    margin: 5px 15px;
+    border-radius: 5px;
+}
+
+.form-article input, textarea { 
+    width: 500px;
+    border: 2px solid black;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 10px 12px;
+}
+
+/* BOTÕES DO FORMULÁRIO */
+.button button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button .enviar {
+    background-color: lightgreen;
+}
+
+.button .enviar:hover {
+    background-color: rgb(50, 255, 50);
+}
+
+.button .resetar {
+    background-color: lightcoral;
+}
+
+.button .resetar:hover {
+    background-color: rgb(255, 68, 68);
+}
+
+/* FOOTER */
+.footer-content {
+    background-color: rgb(202, 185, 255);
+    font-size: 1.2rem;
+}
+
+.footer-content p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    color: rgb(34, 65, 132);
+    font-size: 1.25rem;
+}
+
+.footer-content address{
+    text-align: center;
+    padding: 15px 10px
+}

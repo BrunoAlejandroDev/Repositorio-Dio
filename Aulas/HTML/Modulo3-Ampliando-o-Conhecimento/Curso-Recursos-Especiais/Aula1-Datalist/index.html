@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Datalist</title>
+</head>
+<body>
+    <!-- O datalist funciona de forma parecida com o select, porém a diferença está no detalhe de que o datalist funciona como um campo de sugestão ao usuário, enquanto o select é um campo de opções na qual o usuário precisa escolher uma delas. -->
+
+    <input type="search" name="search" list="browsers">
+    <datalist id="browsers">
+        <option>Google Chrome</option>
+        <option>Microsoft Edge</option>
+        <option>Mozila Firefox</option>
+        <option>Safari</option>
+        <option>Opera</option>
+    </datalist>
+
+    <!-- Para conectar o input com o datalist usa-se um id no datalist e, no input, coloca-se a propriedade list com o mesmo valor do id. -->
+</body>
+</html>

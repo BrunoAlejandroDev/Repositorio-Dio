@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas - Aula 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--
+    table: tag de estrutura da tabela (tag inicial);
+    tr: tag de linha (identação do tipo block);
+    td: tag de célula;
+    title: colocar descrição em células e linhas;
+    th: tag de cabeçalho;
+    summary: descrever um resumo dos dados da tabela (descrição para acessibilidade);
+    tbody: tag de corpo da tabela;
+    thead: tag de cabeçalho da tabela;
+    tfoot: tag de rodapé da tabela;
+    caption: título/legenda da tabela;
+    -->
+
+    <table summary="tabela com nome e idade" width="250" cellspacing = "1">
+        <thead>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bruno</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>Laika</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Filhote</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>Cão</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

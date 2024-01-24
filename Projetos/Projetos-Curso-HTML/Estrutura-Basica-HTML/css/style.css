@@ -1,0 +1,92 @@
+/* CONFIGURAÇÕES GERAIS */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3, h4{
+    margin: 15px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+/* CORPO DO SITE */
+
+header{
+    background-color: lightblue;
+    padding: 25px 0;
+    margin-bottom: 10px;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav h2{
+    margin-left: 15px;
+}
+
+nav li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    color: rgb(86, 86, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    margin: 20px 15px;
+}
+
+main p{
+    margin: 8px 0;
+}
+
+footer{
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ol a{
+    text-decoration: underline;
+    color: black;
+} 
+
+#referencias{
+    margin-left: 15px;
+}
+
+.inicio{
+    margin: 20px 15px;
+    font-size: 1.2em;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: black;
+}
+
+.inicio a:hover{
+    color: rgb(86, 86, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}

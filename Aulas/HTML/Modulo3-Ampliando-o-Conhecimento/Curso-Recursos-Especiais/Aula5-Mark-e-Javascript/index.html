@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+</head>
+<body>
+    <input type="text" id="busca"><br>
+    <p id="descricao">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem autem laboriosam esse deleniti ducimus porro excepturi quam, possimus sint, adipisci quod, iusto quasi enim necessitatibus unde dolore quibusdam quia fugit.
+    </p>
+
+    <script defer>
+        let searchField = document.getElementById('busca');
+        let descriptionText = document.getElementById('descricao')
+        let textToSearch = descriptionText.innerHTML;
+
+        function realizarBusca(busca) {
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, `ig`);
+            const ocurrences = textToSearch.match(regex);
+
+            descriptionText.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+        }
+
+        searchField.addEventListener('keyup', (e) => realizarBusca(e.target.value));
+    </script>
+</body>
+</html>

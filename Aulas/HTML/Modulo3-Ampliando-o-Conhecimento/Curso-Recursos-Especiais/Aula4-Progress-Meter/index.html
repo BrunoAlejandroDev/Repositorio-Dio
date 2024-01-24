@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Progress e Meter</title>
+</head>
+<body>
+    <!-- A tag progress é uma tag de contabilização de progresso, ou seja, conforme uma ação vai sendo executada, o progresso dessa ação é contabilizado. -->
+    <progress id="progress" max="100" min="0" value="0"></progress>
+
+    <script>
+        let progress = document.querySelector('#progress');
+        const interval = setInterval(() => {
+            progress.value += 10;
+
+            if(progress >= 100){
+                console.log('Carregamento finalizado.')
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+
+    <!-- O meter é uma tag para medição de valores fixos, como por exemplo, o quanto de memória ainda resta em um HD. É um medidor. -->
+</body>
+</html>
