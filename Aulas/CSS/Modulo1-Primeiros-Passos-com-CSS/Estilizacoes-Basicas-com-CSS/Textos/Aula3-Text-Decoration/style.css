@@ -1,0 +1,18 @@
+.exemplo1 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+.exemplo2 {
+    text-decoration-line: overline;
+    text-decoration-style: dotted;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
+}
+.exemplo3 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: pink;
+    text-decoration-thickness: 3px;
+}

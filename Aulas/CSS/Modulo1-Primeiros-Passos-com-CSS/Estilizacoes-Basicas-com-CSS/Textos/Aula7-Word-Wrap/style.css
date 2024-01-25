@@ -1,0 +1,8 @@
+.exemplo {
+    width: 120px;
+    background-color: lightpink;
+}
+
+#word-wrap {
+    word-wrap: break-word;
+}
