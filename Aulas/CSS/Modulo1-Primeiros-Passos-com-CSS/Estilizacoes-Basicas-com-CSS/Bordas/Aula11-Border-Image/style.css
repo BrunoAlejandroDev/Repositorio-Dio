@@ -1,0 +1,13 @@
+.exemplo {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 30px solid;
+    margin: 40px auto;
+}
+
+/* A propriedade border-image é uma versão resumida de todos os valores possíveis para essa propriedade, a ordem a ser seguida é a seguinte: source, slice, width, outset e repeat. OBS: o slice, o width e o outset devem ser separados por uma barra. */
+
+#versao-resumida {
+    border-image: url(../../../../../assets/estrelas.png) 171 / 20px / 1 round;
+}

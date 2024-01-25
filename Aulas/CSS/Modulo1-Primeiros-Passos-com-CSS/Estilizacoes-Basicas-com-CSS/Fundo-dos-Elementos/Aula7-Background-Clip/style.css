@@ -1,0 +1,25 @@
+div {
+    margin: 10px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+.exemplo {
+    width: 300px;
+    height: 200px;
+    border: 15px dashed lightseagreen;
+    background-image: url('https://th.bing.com/th/id/OIP.rcMQeFtC2AFOBT78tec_wwHaFj?w=626&h=470&rs=1&pid=ImgDetMain');
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 30px;
+}
+
+#text {
+    color: transparent;
+    background-clip: text;
+}

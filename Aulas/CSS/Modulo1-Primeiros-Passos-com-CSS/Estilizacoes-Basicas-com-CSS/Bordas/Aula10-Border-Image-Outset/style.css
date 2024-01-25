@@ -1,0 +1,25 @@
+.exemplo {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 30px solid;
+    margin: 40px auto;
+}
+
+/* A propriedade border-image-outset é usada para definir como a imagem vai se distribuir (posicionar) ao redor do elemento, ou seja, podemos colocar a imagem ao redor do elemento, como uma borda externa. Essa propriedade aceita até 4 valores, tanto absolutos como relativos, funcionando da mesma forma que os outros. Não aceita valores negativos. */
+
+#exemplo1 {
+    border-image-source: url(../../../../../assets/estrelas.png);
+    border-image-slice: 171;
+    border-image-width: 30px;
+    border-image-repeat: round;
+
+    border-image-outset: 30px;
+}
+
+#exemplo2 {
+    border-image-source: linear-gradient(rgb(164, 232, 254), rgb(252, 145, 163));
+    border-image-slice: 10;
+
+    border-image-outset: 0 50px;
+}

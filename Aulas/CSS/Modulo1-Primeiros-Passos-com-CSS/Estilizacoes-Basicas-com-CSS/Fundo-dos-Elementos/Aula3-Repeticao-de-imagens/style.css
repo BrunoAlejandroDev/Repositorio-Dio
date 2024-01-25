@@ -1,0 +1,34 @@
+div {
+    margin: 20px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    background-image: url('./assets/img3.jfif');
+    background-size: 120px;
+    border: 1px solid black;
+}
+
+#repeat-x {
+    background-repeat: repeat-x;
+}
+
+#repeat-y {
+    background-repeat: repeat-y;
+}
+
+#space { 
+/* vai criar um espaço tanto horizontal como vertical entre as imagens */
+    background-repeat: space;
+}
+
+#round {
+/* vai repetir as imagens porém elas serão redimensionadas para cobrirem a área que ocupam, como se eu tivesse usado o background-size: cover */
+    background-repeat: round;
+}
+
+#no-repeat {
+/* se utilizado junto com o background-size: cover, fará com que a imagem não se repita e fique dimensionada no container */
+    background-repeat: no-repeat;
+}

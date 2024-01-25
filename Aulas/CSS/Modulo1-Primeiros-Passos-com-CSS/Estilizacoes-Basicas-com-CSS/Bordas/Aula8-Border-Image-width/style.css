@@ -1,0 +1,22 @@
+.exemplo {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 30px solid;
+    margin: 10px auto;
+}
+
+/* A propriedade border-image-width é usada para definir o tamanho que a imagem ou o gradiente vai ocupar na borda, ou seja, é a largura da imagem de borda do elemento. Essa propriedade aceita até 4 valores, tanto absolutos como relativos, funcionando da mesma forma que os outros, como um relógio no sentido horário. */
+
+#exemplo1 {
+    border-image-source: url(../../../../../assets/estrelas.png);
+    border-image-slice: 171;
+    border-image-repeat: repeat;
+    border-image-width: 10px 20px 30px 40px;
+}
+
+#exemplo2 {
+    border-image-source: linear-gradient(rgb(164, 232, 254), rgb(252, 145, 163));
+    border-image-slice: 10;
+    border-image-width: 20px;
+}

@@ -1,0 +1,29 @@
+div {
+    margin: 10px auto;
+}
+
+p {
+    text-align: center;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    background-image: url('./assets/img3.jfif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed lightseagreen;
+    padding: 30px;
+}
+
+#padding-box {
+    background-origin: padding-box;
+}
+
+#border-box {
+    background-origin: border-box;
+}
+
+#content-box {
+    background-origin: content-box;
+}

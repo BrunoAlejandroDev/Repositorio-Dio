@@ -1,0 +1,33 @@
+div {
+    margin: 10px 0;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    
+    background-image: url('./assets/img4.png'), url('./assets/img2.jfif');
+}
+
+/* usando a propriedade background-size para manipular a forma como as imagens são dimensionadas dentro de um container */
+
+#cover {
+    background-size: cover;
+}
+
+#contain {
+    background-size: contain;
+}
+
+#tamanho {
+    background-size: 50%;
+}
+
+#exemplo-x-y {
+    background-size: 200px 150px;
+}
+
+#exemplo-camadas {
+    background-size: contain, cover;
+}

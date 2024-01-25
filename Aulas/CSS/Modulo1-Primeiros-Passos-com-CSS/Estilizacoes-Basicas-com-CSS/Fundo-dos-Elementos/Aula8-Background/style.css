@@ -1,0 +1,24 @@
+div {
+    margin: 10px 0;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed lightgreen;
+    color: white;
+    padding: 30px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* ordem: image, position, size, repeat, origin, clip, attachment, color. OBS: o position e o size podem ser definidos na mesma linha separados por uma barra (/) */
+    background: 
+    url('./assets/img2.jfif')
+    center
+    50px 50px
+    repeat-x
+    fixed
+    padding-box
+    content-box
+    lightblue;
+}
