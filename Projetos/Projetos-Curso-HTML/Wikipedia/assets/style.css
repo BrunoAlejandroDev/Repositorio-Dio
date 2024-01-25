@@ -71,15 +71,15 @@ header .search-contain {
 }
 
 /* ASIDE - LIVROS */
-.sidebar-container{
-    border-right: solid 1px #cdcdcd;
+.content .sidebar-container{
+    border-right: 1px solid #cdcdcd;
     height: 100%;
 }
 
 .sidebar-container h2 {
     font-weight: 600;
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin: 10px 0;
 }
 
 .sidebar-container ul li {
@@ -127,8 +127,29 @@ header .search-contain {
 }
 
 .anchors h2 {
+    margin: 10px 0;
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.anchors h3 {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.anchors ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.anchors ul li a {
+    cursor: pointer;
+}
+
+.anchors ul li a:hover {
+    text-decoration: underline;
+    color: rgb(31, 31, 255);
 }
 
 /* FOOTER */
