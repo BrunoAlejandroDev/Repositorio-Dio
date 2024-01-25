@@ -2,8 +2,6 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
 /* HEADER */
 header {
     display: flex;
@@ -66,14 +64,14 @@ header .search-contain {
     gap: 2rem;
     grid-template-areas: "sidebar main anchors";
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 /* ASIDE - LIVROS */
-.content .sidebar-container{
+aside {
     border-right: 1px solid #cdcdcd;
     height: 100%;
+    background-color: lightgray;
+    padding-left: 15px;
 }
 
 .sidebar-container h2 {
@@ -124,6 +122,7 @@ header .search-contain {
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+    background-color: lightgray;
 }
 
 .anchors h2 {

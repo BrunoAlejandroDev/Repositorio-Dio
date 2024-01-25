@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { list-style: none; }
+
+a { color:rgb(0, 0, 0); text-decoration: none;}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
