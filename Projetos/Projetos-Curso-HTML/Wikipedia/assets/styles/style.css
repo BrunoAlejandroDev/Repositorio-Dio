@@ -47,6 +47,7 @@ header .search-contain {
     border-radius: 0 2px 2px 0;
     cursor: pointer;
 }
+/* fim do input de pesquisa */
 
 .bar {
     background-color: #f9f9fb;
@@ -93,6 +94,15 @@ aside {
     color: rgb(31, 31, 255);
 }
 
+.sidebar-container .details-container summary {
+    margin: 5px 0;
+}
+
+.sidebar-container .details-container .movie__links {
+    padding-left: 10px;
+}
+/* FIM ASIDE LIVROS */
+
 /* MAIN */
 .main-content .main-content__article > h2 {
     text-align: center;
@@ -110,6 +120,23 @@ aside {
 
 .main-content .main-content__article > p {
     padding: 5px 0;
+}
+
+.main-content .movie__poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.main-content .movie__poster img {
+    background-size: cover;
+    width: 200px;
+}
+
+.main-content .movie__poster > figcaption {
+    font-size: 0.8rem;
 }
 
 .main-content .main-content__article ul li {
@@ -153,6 +180,19 @@ aside {
 
 /* FOOTER */
 .footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+    height: 50px;
+    border-top: solid 1px #727272;
+}
+
+.footer p {
+    padding: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer a:hover {
+    color: rgb(31, 31, 255);
+    font-size: 1.1rem;
+    text-decoration: underline;
 }
