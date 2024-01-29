@@ -1,0 +1,30 @@
+.exemplo1 {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+
+    border: 10px solid lightblue;
+    background-color: lightpink;
+
+    box-shadow: 10px 10px 3px lightgoldenrodyellow; /* interno/externo horizontal vertical desfoque espalhamento cor */
+}
+
+.exemplo2 {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+
+    border: 10px solid lightgreen;
+    background-color: lightskyblue;
+
+    box-shadow: inset 10px 10px 3px 10px lightseagreen;
+}
+
+img {
+    margin: 10px 20px;
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+
+    filter: drop-shadow(10px 10px 3px rgb(126, 126, 126));
+}
