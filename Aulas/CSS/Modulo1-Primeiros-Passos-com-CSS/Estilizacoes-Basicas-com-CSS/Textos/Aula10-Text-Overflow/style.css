@@ -1,0 +1,18 @@
+.exemplo {
+    width: 200px;
+    color: black;
+    background-color: rgb(195, 131, 255);
+}
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#exemplo2 {
+    text-overflow: clip;
+}
+
+#exemplo3 {
+    text-overflow: ellipsis;
+}
