@@ -1,0 +1,19 @@
+.exemplo {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+#hidden {
+    overflow: hidden;
+}
+
+#scroll {
+    overflow: scroll;
+}
