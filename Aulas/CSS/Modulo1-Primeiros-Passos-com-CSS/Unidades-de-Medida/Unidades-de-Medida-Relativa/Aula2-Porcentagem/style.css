@@ -1,0 +1,14 @@
+#elemento-pai {
+    border: 5px solid black;
+    width: 500px;
+}
+
+.exemplo-pixel {
+    background-color: lightblue;
+    width: 300px;
+}
+
+.exemplo-porcentagem {
+    background-color: lightpink;
+    width: 50%;
+}
