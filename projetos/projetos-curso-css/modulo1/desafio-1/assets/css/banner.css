@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)),  url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB;
+}
+
+.banner-content {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner-content__logo {
+    background-color: rgba(0, 0, 0, .2);
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.banner-content__logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner-content h1 {
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text; /*serve para inserir o efeito de gradiente dentro da fonte tipográfica*/
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
+
+.banner-content button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #31A8DD;
+
+    padding: 16px 32px;
+
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+
+/* SESSÃO DE CURSOS */
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #33A8DB;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    padding: 16px;
+    border: 1px solid #33A8DB;
+    border-radius: 100px;
+    background-color: #252525;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+/* FIM DA SESSÃO DE CURSOS */
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url(../images/woman-code.png);
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB;
+    border-bottom: 1px solid #33A8DB;
+    padding: 200px 100px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#transform-world p {
+    text-transform: lowercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+    max-width: 250px;
+}
+
+/* SESSÃO PROFESSIONAL CHALLENGES */
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#professional-challenges h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #33A8DB;
+    margin-bottom: 24px;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+}
