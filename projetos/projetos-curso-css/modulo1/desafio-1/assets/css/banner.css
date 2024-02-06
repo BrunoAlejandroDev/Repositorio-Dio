@@ -63,6 +63,17 @@ body {
     border-radius: 30px;
 }
 
+.banner-content button:hover {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-image: linear-gradient(#E5E044, #fff923);
+    border-image-slice: 10;
+}
+
 /* SESSÃO DE CURSOS */
 #course-content {
     width: 800px;
@@ -133,4 +144,27 @@ body {
 
 #professional-challenges img {
     margin: 32px 0;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #E5E044;
+    text-decoration: underline;
+    font-size: 1.125rem;
 }
