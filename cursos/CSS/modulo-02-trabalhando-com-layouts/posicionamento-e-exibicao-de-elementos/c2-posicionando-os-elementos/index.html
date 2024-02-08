@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+
+    <style>
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+        #elemento-01 {
+            background-color: lightblue;
+        }
+        #elemento-02 {
+            background-color: lightgreen;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        #elemento-03 {
+            background-color: lightpink;
+            position: relative;
+            top: 40px;
+            left: 60px;
+        }
+        #elemento-04 {
+            background-color: lightsalmon;
+        }
+        #elemento-05 {
+            background-color: lightseagreen;
+        }
+        #elemento-06 {
+            background-color: rgb(255, 255, 195);
+        }
+    </style>
+</head>
+<body>
+    <h2>Position Relative</h2>
+
+    <div id="elemento-01" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-02" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-03" class="exemplo inline">Elemento 03</div>
+
+    <br><hr>
+    <div id="elemento-04" class="exemplo">Elemento 04</div>
+    <div id="elemento-05" class="exemplo">Elemento 05</div>
+    <div id="elemento-06" class="exemplo">Elemento 06</div>
+</body>
+</html>
