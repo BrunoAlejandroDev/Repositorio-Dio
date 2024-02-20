@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+
+    <style>
+        .exemplo {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #elemento-01 {
+            background-color: lightblue;
+        }
+        #elemento-02 {
+            background-color: lightgreen;
+        }
+        #elemento-03 {
+            background-color: lightpink;
+        }
+        #elemento-04 {
+            background-color: violet;
+        }
+        #elemento-05 {
+            background-color: royalblue;
+        }
+        #elemento-06 {
+            background-color: aquamarine;
+        }
+
+        #elemento-07 {
+            margin: 0;
+            padding: 10px;
+            background-color: palevioletred;
+            text-align: center;
+            cursor: pointer;
+            position: fixed;
+            bottom: 0;
+            width: 150px;
+            height: 50px;
+            right: 10px;
+        }
+        #elemento-07:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <h2>Position Fixed</h2>
+
+    <p>Position absolute com elemento pai sendo a própria página HTML</p>
+    <div id="elemento-01" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-02" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-03" class="exemplo inline">Elemento 03</div>
+    <div id="elemento-04" class="exemplo inline">Elemento 03</div>
+    <div id="elemento-05" class="exemplo inline">Elemento 03</div>
+    <div id="elemento-06" class="exemplo inline">Elemento 03</div>
+    <div id="elemento-07" class="inline">Elemento 04</div>
+</body>
+</html>

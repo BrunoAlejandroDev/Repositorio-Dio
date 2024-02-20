@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+
+    <style>
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+        #elemento-01 {
+            background-color: lightblue;
+        }
+        #elemento-02 {
+            background-color: lightgreen;
+            position: absolute;
+            left: 300px;
+        }
+        #elemento-03 {
+            background-color: lightpink
+        }
+
+        #elemento-pai {
+            box-sizing: border-box;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid red;
+            position: relative;
+        }
+        #elemento-filho {
+            background-color: palevioletred;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .container img {
+            width: 300px;
+            object-fit: cover;
+        }
+        .container h3{
+            margin: 0;
+            font-size: 40px;
+            font-weight: 900;
+
+            position: absolute;
+            top: 10px;
+            left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Position Absolute</h2>
+
+    <p>Position absolute com elemento pai sendo a própria página HTML</p>
+    <div id="elemento-01" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-02" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-03" class="exemplo inline">Elemento 03</div>
+
+    <p>Position absolute com elemento pai e filho</p>
+    <div id="elemento-pai">
+        <div id="elemento-filho" class="exemplo">posição absoluta em relação ao elemento pai</div>
+    </div>
+
+    <p>Posicionando um texto sobre uma imagem com position absolute</p>
+    <div class="container">
+        <img src="https://source.unsplash.com/random" alt="">
+        <h3>TEXTO</h3>
+    </div>
+</body>
+</html>
