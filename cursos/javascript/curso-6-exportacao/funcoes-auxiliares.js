@@ -1,5 +1,5 @@
 // local para colocar as funções que serão exportadas
-const numeros = [5, 50, 10, 98, 23, 67];
+const numeros = [5, 50, 100, 98, 23, 105, 87, 222]
 let i = 0;
 
 function gets() {

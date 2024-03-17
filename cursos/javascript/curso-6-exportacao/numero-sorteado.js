@@ -15,7 +15,7 @@ for (let i = 0; i < quantidadeDeValores; i++) {
     maiorValorEncontrado = numeroSorteado
   }
 }
-//print(maiorValorEncontrado);
+print(maiorValorEncontrado);
 
 ///////////////////////////////
 // for (let i = 0; i < 6; i++) {
