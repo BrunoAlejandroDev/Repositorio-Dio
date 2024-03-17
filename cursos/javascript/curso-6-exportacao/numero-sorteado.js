@@ -5,6 +5,7 @@
 const { gets, print } = require("./funcoes-auxiliares");
 
 const quantidadeDeValores = gets();
+const numerosSorteados = [];
 let maiorValorEncontrado = 0;
 
 // loop para percorrer o array numeros e printar o maior valor
@@ -14,9 +15,16 @@ for (let i = 0; i < quantidadeDeValores; i++) {
     maiorValorEncontrado = numeroSorteado
   }
 }
-print(maiorValorEncontrado);
+//print(maiorValorEncontrado);
 
-// loop para percorrer o array numerosSorteados e verificar qual o maior número
+///////////////////////////////
+// for (let i = 0; i < 6; i++) {
+//   const numeroSorteado = gets(); // salvei cada número na variável
+//   numerosSorteados.push(numeroSorteado);
+// }
+// print(numerosSorteados);
+
+// // loop para percorrer o array numerosSorteados e verificar qual o maior número
 // let maiorValor = 0;
 
 // for (let i = 0; i < numerosSorteados.length; i++) {
