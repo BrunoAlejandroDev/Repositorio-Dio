@@ -5,8 +5,7 @@
 */
 const { gets, print } = require("./funcoes-auxiliares");
 
-// array para armazenar os números sorteados
-const numerosSorteados = [];
+const numerosSorteados = []; // array para armazenar os números sorteados
 
 // loop para percorrer o array com os números que está no arquivo de funções
 for (let i = 0; i < 5; i++) {
@@ -16,10 +15,9 @@ for (let i = 0; i < 5; i++) {
 print(numerosSorteados);
 
 // loop para percorrer o array numerosSorteados e verificar qual o maior número
-
 let maiorValor = 0;
 
-for (let i = 0; i < numerosSorteados.lengt; i++) {
+for (let i = 0; i < numerosSorteados.length; i++) {
   const numeroSorteado = numerosSorteados[i];
   if (numeroSorteado > maiorValor) {
     maiorValor = numeroSorteado;
