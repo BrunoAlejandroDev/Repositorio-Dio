@@ -5,12 +5,12 @@
 */
 const { gets, print } = require("./funcoes-auxiliares");
 
-const numerosSorteados = []; // array para armazenar os números sorteados
+const numerosSorteados = [];
 
-// loop para percorrer o array com os números que está no arquivo de funções
+// loop para percorrer o array numeros de acordo com a quantidade de valores no array
 for (let i = 0; i < 5; i++) {
   const numeroSorteado = gets(); // salvei cada número na variável
-  numerosSorteados.push(numeroSorteado); // estou colocando cada número no array
+  numerosSorteados.push(numeroSorteado);
 }
 print(numerosSorteados);
 
