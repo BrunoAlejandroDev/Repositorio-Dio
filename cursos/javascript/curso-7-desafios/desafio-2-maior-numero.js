@@ -11,7 +11,7 @@ for(let i = 0; i < n; i++) {
     const numero = gets();
     if(numero % 2 === 0) {
         if(numero > maiorNumPar) {
-            maiorNumPar = numero
+            maiorNumPar = numero;
         }
     }
     else {
@@ -23,5 +23,5 @@ for(let i = 0; i < n; i++) {
         }
     }
 }
-print(maiorNumPar)
-print(menorNumImpar)
+print(`Maior número par: ${maiorNumPar}`);
+print(`Menor número impar: ${menorNumImpar}`);
