@@ -14,11 +14,13 @@ const {gets, print} = require('./funcoes-auxiliares-3');
 const valorSalario =  gets();
 const valorBeneficios = gets();
 
+// função para calcular o percentual de imposto e retornar o valor a ser subtraido do salario
 function calcularPercentual (valor, percentual) {
     return valor * (percentual / 100);
 }
 
-function pegarAliquotaComBaseNoSalario (salario) {
+// função para retornar o percentual de imposto com base no salario
+function pegarAliquota (salario) {
     if (salario >= 0 && salario <= 1100) {
         return 5;
     }
@@ -30,8 +32,9 @@ function pegarAliquotaComBaseNoSalario (salario) {
     }
 }
 
+// função para retornar o valor do salário com base no calculo proposto no título da questão
 function valorParaTransferir () {
-    const aliquotaImposto = pegarAliquotaComBaseNoSalario (valorSalario);
+    const aliquotaImposto = pegarAliquota (valorSalario);
     const valorImposto = calcularPercentual (valorSalario, aliquotaImposto);
 
     return (valorSalario - valorImposto) + valorBeneficios
