@@ -1,0 +1,40 @@
+@media screen and (min-width: 380px) {
+    .content-section__list-pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .list-pokemons__pokemon .pokemon-name {
+        font-size: 1.2rem;
+    }
+
+    .list-pokemons__pokemon .pokemon-details .types .type {
+        font-size: .65rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .content-section__list-pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .list-pokemons__pokemon .pokemon-name {
+        font-size: 1.3rem;
+    }
+
+    .list-pokemons__pokemon .pokemon-details .types .type {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content-section {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+
+    .content-section__list-pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
