@@ -4,12 +4,10 @@ const limit = 10;
 const urlPokemon = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
 fetch(urlPokemon)
-    .then(function (response){ // serve para executar algo quando a requisição for atendida
-        console.log(response);
-    })
-    .catch(function (error){ // serve para executar algo quando a requisição der erro
-        console.log(error);
-    })
-    .finally(function (){ // serve para executar um comando independente da requisição ter funcionado ou não
-        console.log('Requisição finalizada');
-    })
+    .then((response) => response.json()) // serve para executar algo quando a requisição for atendida
+
+    .then((jsonBody) => console.log(jsonBody)) // then encadeado: serve para executar algo a partir do resultado da execução do then anterior
+
+    .catch((error) => console.log(error)) // define uma execução no caso de erro
+
+    .finally(() => console.log('Requisição finalizada')) // executa um comando independente do resultado da requisição
