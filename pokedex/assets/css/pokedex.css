@@ -1,18 +1,18 @@
-.content-section__list-pokemons {
+.list-pokemons {
     display: grid;
     grid-template-columns: 1fr;
 
-    padding: 0;
-    margin: 0;
+    max-width: 90%;
+    gap: 20px;
 
     list-style-type: none;
 }
 
-.content-section__list-pokemons .list-pokemons__pokemon {
+.list-pokemons .list-pokemons__pokemon {
     display: flex;
     flex-direction: column;
 
-    margin: .5rem;
+    margin: .5rem 0;
     padding: 1rem;
     border-radius: 1rem;
 
