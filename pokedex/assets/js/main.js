@@ -25,7 +25,7 @@ pokeAPI.getPokemons().then((pokemonList = []) => {
     pokemonsList.innerHTML += pokemonList.map(convertListPokemonToListItem).join("");
 }) 
 
-//* O map faz a mesma coisa que o bloco de código abaixo
+//* O map acima faz a mesma coisa que o bloco de código abaixo
 // for (let i = 0; i < pokemonList.length; i++) {
 //     const pokemon = pokemonList[i];
 //     pokemonsList.innerHTML += convertListPokemonToListItem(pokemon);
