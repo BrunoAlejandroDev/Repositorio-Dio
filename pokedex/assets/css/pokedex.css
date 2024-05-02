@@ -27,6 +27,7 @@
 }
 
 .list-pokemons__pokemon .pokemon-name {
+    text-transform: capitalize;
     font-size: 1.2rem;
     font-weight: 800;
     color: #fff;

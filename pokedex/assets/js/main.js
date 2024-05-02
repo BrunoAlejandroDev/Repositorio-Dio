@@ -1,24 +1,24 @@
-const pokemonsList = document.getElementById('pokemons-list');
-
 function convertListPokemonToListItem (pokemon) {
     return `
         <li class="list-pokemons__pokemon ${pokemon.type}">
             <span class="pokemon-number">#${pokemon.number}</span>
             <span class="pokemon-name">${pokemon.name}</span>
-
+            
             <div class="pokemon-details">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join("")}
+                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join("")}
                 </ol>
-
+                
                 <img 
-                src="${pokemon.photo}"
-                alt="${pokemon.name}"
+                    src="${pokemon.photo}"
+                    alt="${pokemon.name}"
                 />
             </div>
         </li>
     `
 }
+
+const pokemonsList = document.getElementById('pokemons-list');
 
 pokeAPI.getPokemons().then((pokemonList = []) => {
     pokemonsList.innerHTML += pokemonList.map(convertListPokemonToListItem).join("");
