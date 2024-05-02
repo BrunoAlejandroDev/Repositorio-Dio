@@ -7,17 +7,15 @@ const pokeAPI = {};
 //* criando um método (getPokemons) que retorna o resultado da requisição
 pokeAPI.getPokemons = (offset = 0, limit = 5) => {
     const urlPokemon = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
-
+    
     return fetch(urlPokemon)
-        .then((response) => response.json()) 
-        .then((jsonBody) => jsonBody.results)
-        .then((pokemons) => pokemons.map(pokeAPI.getPokemonDetails))
-        .then((detailsRequired) => Promise.all(detailsRequired))
-        .then((pokemonsDetails) => {
-            console.log(pokemonsDetails);
-        }) 
-
-        .catch((error) => console.log(error))
+    .then((response) => response.json()) 
+    .then((jsonBody) => jsonBody.results) //? limitando a resposta retornada a lista de pokemons (resultos)
+    .then((pokemons) => pokemons.map(pokeAPI.getPokemonDetails)) //? mapeando a lista de pokemons em uma lista de requisições com os detalhes dos pokemons (URL)
+    .then((detailsRequired) => Promise.all(detailsRequired)) //? quando todas as requisições terminarem é devolvida uma lista de detalhes dos pokemons
+    .then((pokemonsDetails) => pokemonsDetails) 
+    
+    .catch((error) => console.log(error))
 }
 
 //* criando um método para, por meio da URL retornada na requisição anterior, pegar os detalhes do pokemon
