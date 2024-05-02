@@ -1,22 +1,18 @@
 const pokemonsList = document.getElementById('pokemons-list');
 
-function convertPokemonTypesToLi(pokemonTypes) {
-    return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`);
-}
-
 function convertListPokemonToListItem (pokemon) {
     return `
-        <li class="list-pokemons__pokemon">
-            <span class="pokemon-number">#${pokemon.order}</span>
+        <li class="list-pokemons__pokemon ${pokemon.type}">
+            <span class="pokemon-number">#${pokemon.number}</span>
             <span class="pokemon-name">${pokemon.name}</span>
 
             <div class="pokemon-details">
                 <ol class="types">
-                    ${convertPokemonTypesToLi(pokemon.types).join("")}
+                    ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join("")}
                 </ol>
 
                 <img 
-                src="${pokemon.sprites.other.dream_world.front_default}"
+                src="${pokemon.photo}"
                 alt="${pokemon.name}"
                 />
             </div>
