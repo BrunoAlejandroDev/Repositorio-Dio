@@ -8,7 +8,7 @@ function convertListPokemonToListItem (pokemon) {
 
             <div class="pokemon-details">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join("")}
+                    ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join("")}
                 </ol>
 
                 <img 
