@@ -3,6 +3,7 @@ const pokemonsList = document.getElementById('pokemons-list');
 const btnLoadMore = document.getElementById('btn-load-more');
 const limit = 5;
 let offset = 0;
+let maxPokemons = 15;
 
 function loadPokemons(offset, limit) {
     pokeAPI.getPokemons(offset, limit).then((pokemonList = []) => {
@@ -25,10 +26,19 @@ function loadPokemons(offset, limit) {
         ).join("");
     }) 
 }
-loadPokemons(offset, limit)
+loadPokemons(offset, limit);
 
 //* criando interatividade do botão
 btnLoadMore.addEventListener('click', () => {
     offset += limit;
-    loadPokemons(offset, limit)
+    const quantdPokemonsProxPag = offset + limit;
+
+    if (quantdPokemonsProxPag >= maxPokemons) {
+        const nemLimit = maxPokemons - offset;
+        loadPokemons(offset, nemLimit);
+        btnLoadMore.parentElement.removeChild(btnLoadMore)
+    }
+    else {
+        loadPokemons(offset, limit)
+    }
 });
